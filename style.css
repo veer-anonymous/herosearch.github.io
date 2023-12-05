@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Robotao',sans-serif;
+    background-color: rgb(211, 248, 236);
+}
+
+nav{
+    padding: 30px;
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 80%;
+
+}
+
+.searchBar input{
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.searchBar button{
+    width:  100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(21, 151, 151);
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-inline: 20px;
+    cursor: pointer;
+}
+.searchBar button:hover{
+    transition: .1s;
+    transform: scale(1.1);
+    background-color:  rgb(93, 215, 215);;
+}
+
+.showData{
+    display: grid;
+    justify-content: center;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin: auto;
+    
+}
+.card{
+    margin-inline: 20px;
+    margin-top: 30px;
+    border: 1px solid rgb(241, 212, 212);
+    background-color: rgb(231, 241, 222);
+    border-radius: 5px;
+    
+}
+
+.card a:hover{
+    border-bottom: 1px solid black;
+    color: rgb(20, 142, 142);
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+.card a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.showData img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.fa-regular{
+  font-size: 30;
+  background-color: black;
+}
+
+@media screen and (max-width:480px) {
+
+    .searchBar button{
+        font-size: 15px;
+        margin-inline: 5px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .searchBar input{
+        width:  50%;
+
+    }
+}
+
+
